@@ -17,10 +17,13 @@ public class InsertListener implements ActionListener {
 
         JFrame frame = new JFrame();
         JDialog dialog = new JDialog(frame, true);
-        dialog.setLayout(new FlowLayout(FlowLayout.LEFT));
-
+        GridLayout grid = new GridLayout(6, 2, 5, 12);
+       // dialog.setLayout(new FlowLayout(FlowLayout.LEFT));
+        dialog.setLayout(grid);
         JLabel displayText = new JLabel("Enter student data");
+        JLabel text = new JLabel("");
         dialog.add(displayText);
+        dialog.add(text);
         // JPanel namePanel = new JPanel(new FlowLayout());
         // dialog.add(namePanel);
         JLabel nameLabel = new JLabel("Name");
@@ -70,8 +73,8 @@ public class InsertListener implements ActionListener {
         });
 
         dialog.add(btn);
-
-        dialog.setSize(500,400);
+        dialog.pack();
+        //dialog.setSize(500,400);
         dialog.setTitle("Dialog Window");
         dialog.setVisible(true);
         dialog.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);

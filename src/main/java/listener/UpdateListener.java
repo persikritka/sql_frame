@@ -17,10 +17,13 @@ public class UpdateListener implements ActionListener{
 
         JFrame frame = new JFrame();
         JDialog dialog = new JDialog(frame, true);
-        dialog.setLayout(new FlowLayout(FlowLayout.LEFT));
-
+       // dialog.setLayout(new FlowLayout(FlowLayout.LEFT));
+        GridLayout grid = new GridLayout(0, 2, 5, 12);
+        dialog.setLayout(grid);
         JLabel displayText = new JLabel("Enter student data");
+        JLabel text = new JLabel("");
         dialog.add(displayText);
+        dialog.add(text);
 
         JLabel idLabel = new JLabel("ID");
         JTextField idField = new JTextField(10);

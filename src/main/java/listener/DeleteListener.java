@@ -43,7 +43,8 @@ public class DeleteListener implements ActionListener{
 
         dialog.add(btn);
 
-        dialog.setSize(500,400);
+       // dialog.setSize(500,400);
+        dialog.pack();
         dialog.setTitle("Dialog Window");
         dialog.setVisible(true);
         dialog.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
