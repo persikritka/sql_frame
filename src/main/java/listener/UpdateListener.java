@@ -17,7 +17,6 @@ public class UpdateListener implements ActionListener{
 
         JFrame frame = new JFrame();
         JDialog dialog = new JDialog(frame, true);
-       // dialog.setLayout(new FlowLayout(FlowLayout.LEFT));
         GridLayout grid = new GridLayout(0, 2, 5, 12);
         dialog.setLayout(grid);
         JLabel displayText = new JLabel("Enter student data");
@@ -30,21 +29,13 @@ public class UpdateListener implements ActionListener{
         dialog.add(idLabel);
         dialog.add(idField);
 
-        // JPanel namePanel = new JPanel(new FlowLayout());
-        // dialog.add(namePanel);
         JLabel nameLabel = new JLabel("Name");
         JTextField nameField = new JTextField(10);
-        // namePanel.add(nameLabel);
-        // namePanel.add(nameField);
         dialog.add(nameLabel);
         dialog.add(nameField);
 
-        // JPanel surnamePanel = new JPanel(new FlowLayout());
-        // dialog.add(surnamePanel);
         JLabel surnameLabel = new JLabel("Surname");
         JTextField surnameField = new JTextField(10);
-        // namePanel.add(surnameLabel);
-        // namePanel.add(surnameField);
         dialog.add(surnameLabel);
         dialog.add(surnameField);
 
